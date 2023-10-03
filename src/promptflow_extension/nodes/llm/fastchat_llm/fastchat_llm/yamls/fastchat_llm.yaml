@@ -1,0 +1,29 @@
+fastchat_llm.tools.fastchat_llm.FastChatLLM.chat:
+  class_name: FastChatLLM
+  description: Stream from fastchat llm
+  function: chat
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    max_tokens:
+      type:
+      - int
+    model:
+      type:
+      - string
+    prompt:
+      type:
+      - string
+    system_prompt:
+      type:
+      - string
+    temperature:
+      type:
+      - double
+    top_p:
+      type:
+      - double
+  module: fastchat_llm.tools.fastchat_llm
+  name: fastchat_llm
+  type: custom_llm
